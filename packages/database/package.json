@@ -1,0 +1,25 @@
+{
+  "name": "@aagam/database",
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "prisma generate && tsc",
+    "db:generate": "prisma generate",
+    "db:push": "prisma db push",
+    "db:migrate:dev": "prisma migrate dev",
+    "db:migrate:deploy": "prisma migrate deploy",
+    "db:migrate:status": "prisma migrate status",
+    "db:migrate:reset": "prisma migrate reset --force",
+    "db:validate": "prisma validate",
+    "db:seed": "node seed.js",
+    "db:verify": "prisma validate && prisma migrate status"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.10.0",
+    "dotenv": "^16.0.0"
+  },
+  "devDependencies": {
+    "prisma": "^5.10.0"
+  }
+}

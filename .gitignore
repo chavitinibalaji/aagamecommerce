@@ -1,0 +1,49 @@
+# Dependency directories
+node_modules/
+**/node_modules/
+
+# Build outputs
+dist/
+.next/
+out/
+build/
+*.tsbuildinfo
+
+# Turbo
+.turbo/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+firebase-adminsdk.json
+google-services.json
+**/firebase-adminsdk.json
+**/google-services.json
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+nul
+
+# Runtime uploads
+apps/api-gateway/uploads/
+backups/
+
+# Local docs and deployment notes (not for repo)
+docs/
+RAILWAY_DEPLOYMENT.md
